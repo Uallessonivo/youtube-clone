@@ -20,26 +20,20 @@ const useStyles = makeStyles((theme) => ({
   },
   subcap: {
     marginLeft: 12,
-  },
+  }
 }));
 
 function videoCard({ item }) {
   const classes = useStyles();
   const router = useRouter();
+  
 
   return (
     <Box>
-      <img
-        alt={item.title}
-        src={item.thumb}
-        className={classes.img}
-        onClick={() =>
-          router.push({
-            pathname: '/video/[id]',
-            query: { id: item.id },
-          })
-        }
-      />
+      <img alt={item.title} src={item.thumb} className={classes.img} onClick={() => router.push({
+          pathname: '/video/[id]',
+          query: {id: item.id},
+      })} />
       <Box display="flex" mt="1">
         <Box>
           <Avatar alt={item.authorName} src={item.authorAvatar}></Avatar>
@@ -53,19 +47,10 @@ function videoCard({ item }) {
           >
             {item.title}
           </Typography>
-          <Typography
-            display="block"
-            variant="body2"
-            color="textSecondary"
-            className={classes.subcap}
-          >
+          <Typography display="block" variant="body2" color="textSecondary" className={classes.subcap}>
             {item.authorName}
           </Typography>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            className={classes.subcap}
-          >
+          <Typography variant="body2" color="textSecondary" className={classes.subcap}>
             {`${item.views}  ${dayjs(item.updatedAt).fromNow()}`}
           </Typography>
         </Box>

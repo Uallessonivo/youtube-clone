@@ -2,13 +2,7 @@ import React from 'react';
 import { Box } from '@material-ui/core';
 import Layout from '../components/Layout';
 import VideoCard from '../components/videoCard';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
 
 function Home({ data }) {
 
@@ -74,6 +68,54 @@ export async function getStaticProps() {
     thumb: '/thumb/next04.png',
     videoUrl: 'url',
     updatedAt: new Date()
+
+},
+{
+    id: 5,
+    title: 'NEXT JS O VIDEO 5',
+    authorId: 5,
+    authorName: 'Luan',
+    authorAvatar: 'avatarUrl',
+    views: 120,
+    thumb: '/thumb/next05.png',
+    videoUrl: 'url',
+    updatedAt: new Date()
+
+},
+{
+  id: 6,
+  title: 'NEXT JS O VIDEO 6',
+  authorId: 6,
+  authorName: 'Neuza',
+  authorAvatar: 'avatarUrl',
+  views: 1012,
+  thumb: '/thumb/next06.png',
+  videoUrl: 'url',
+  updatedAt: new Date()
+
+}, 
+{
+  id: 7,
+  title: 'NEXT JS O VIDEO 7',
+  authorId: 7,
+  authorName: 'Thiago',
+  authorAvatar: 'avatarUrl',
+  views: 10525,
+  thumb: '/thumb/next07.png',
+  videoUrl: 'url',
+  updatedAt: new Date()
+
+}, 
+{
+  id: 8,
+  title: 'NEXT JS O VIDEO 8',
+  authorId: 8,
+  authorName: 'Juliana',
+  authorAvatar: 'avatarUrl',
+  views: 51055,
+  thumb: '/thumb/next08.png',
+  videoUrl: 'url',
+  updatedAt: new Date()
 
 }
 ];

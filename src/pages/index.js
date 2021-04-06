@@ -71,7 +71,7 @@ export async function getStaticProps() {
     authorName: 'Uallesson Nunes',
     authorAvatar: 'avatarUrl',
     views: 5055,
-    thumb: '/thumb/next04',
+    thumb: '/thumb/next04.png',
     videoUrl: 'url',
     updatedAt: new Date()
 
